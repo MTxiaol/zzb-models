@@ -1,0 +1,15 @@
+# 模型权重与配置 —— 使用 Git LFS 之外的普通 blob 存储
+#
+# 这里显式声明 *.onnx / *.pt 为二进制，避免 git 试图做文本 diff 与行尾转换，
+# 也避免 .onnx 被误判为文本导致 diff 输出爆炸。
+*.onnx  binary
+*.pt    binary
+*.pth   binary
+*.engine binary
+*.trt   binary
+
+# 配置文件保持 LF
+*.cfg   text eol=lf
+*.json  text eol=lf
+*.ps1   text eol=crlf
+*.md    text eol=lf

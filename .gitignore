@@ -1,0 +1,14 @@
+# 下载中途产生的临时文件
+*.part
+*.tmp
+*.download
+
+# 脚本运行产物
+tools/fetch-failed.txt
+
+# 编辑器与系统
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
